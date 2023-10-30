@@ -1,0 +1,15 @@
+<h1>Hello Neeraj</h1>
+<!--<h1>{{getdata()}}</h1>-->
+<app-header></app-header>
+
+<input type="text" #demo placeholder="Keyup"  />
+<button (click)= "getdata(demo.value)" >Click</button>
+
+<p>The entered value is : {{ displayvalue }}</p>
+
+<!--Counter-->
+<h1>Counter practice</h1>
+<button (click)="counter('add')">++</button>
+<br>
+<p>{{count}}</p>
+<button (click)="counter('minus')">--</button>
